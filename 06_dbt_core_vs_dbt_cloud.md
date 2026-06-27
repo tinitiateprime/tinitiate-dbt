@@ -4,7 +4,7 @@
 
 ## Tinitiate AI Solutions
 
-### dbt Analytics Engineering 
+### dbt Analytics Engineering Bootcamp
 
 ---
 

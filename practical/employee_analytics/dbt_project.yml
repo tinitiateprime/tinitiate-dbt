@@ -1,0 +1,19 @@
+name: employee_analytics
+version: "1.0.0"
+config-version: 2
+
+profile: employee_analytics
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  employee_analytics:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

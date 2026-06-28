@@ -2,9 +2,26 @@
 
 Tinitiate AI Solutions course materials, organized as a sequence of focused topics.
 
+## Downloads and Installation
+
+- **[Official dbt installation guide](https://docs.getdbt.com/docs/local/install-dbt)**
+- **[Download Python](https://www.python.org/downloads/)** — required for the dbt Core workflow used in this course.
+- **[Download Git](https://git-scm.com/downloads/)** — used to download and version-control projects.
+- **[Download VS Code](https://code.visualstudio.com/download)** — recommended editor for SQL and YAML.
+
+Install dbt Core with the Snowflake adapter:
+
+```powershell
+python -m pip install dbt-snowflake
+dbt --version
+```
+
+`dbt-snowflake` automatically installs a compatible version of `dbt-core`.
+
 ## Course Contents
 
 - **[Introduction: dbt Core vs dbt Cloud](introduction.md)** — An overview of dbt's open-source and managed options.
+- **[Hands-On: Build Your First dbt Project](00_hands_on_dbt_practical.md)** — Download and install dbt, then follow a visual Snowflake project line by line through models, tests, documentation, and lineage.
 
 1. **[Analytics Engineering](01_analytics_engineering.md)** — Learn the role, responsibilities, and value of analytics engineers.
 2. **[Modern Data Stack](02_modern_data_stack.md)** — Understand the tools and layers used in modern data platforms.

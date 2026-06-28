@@ -2,6 +2,20 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
+## Visual Guide
+
+![Four steps showing how dbt runs a SQL model](docs/images/how-dbt-runs-model.png)
+
+### How to Explain the Diagram
+
+1. A dbt model begins as a saved `SELECT` statement. Students do not normally write the final `CREATE VIEW` or `CREATE TABLE` statement themselves.
+2. `ref()` names another dbt resource. It also tells dbt that the current model depends on that resource.
+3. During compilation, dbt replaces `ref()` with the correct database, schema, and object name for the active target.
+4. During execution, the warehouse—not the student's laptop—performs the SQL transformation.
+5. Tests, documentation, and lineage are connected to the same model, turning a SQL query into a managed analytics asset.
+
+Demonstrate this with `dbt compile`, then compare the model file with its generated SQL under `target/compiled`.
+
 ## Tinitiate AI Solutions
 
 ### dbt Analytics Engineering Bootcamp

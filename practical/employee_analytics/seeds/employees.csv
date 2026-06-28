@@ -1,0 +1,6 @@
+employee_id,employee_name,department_id,salary,status
+1,Asha,10,85000,ACTIVE
+2,Marco,20,72000,ACTIVE
+3,Lin,10,91000,ACTIVE
+4,Sofia,30,68000,INACTIVE
+5,Noah,20,76000,ACTIVE

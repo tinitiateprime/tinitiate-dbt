@@ -2,6 +2,20 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
+## Visual Guide
+
+![Flow from source systems through data engineering and analytics engineering to business users](docs/images/analytics-engineering-flow.png)
+
+### How to Explain the Diagram
+
+1. Source systems create operational data from sales, finance, HR, websites, and applications.
+2. Data engineers move and store that data reliably in a warehouse. Their work makes data available.
+3. Analytics engineers transform warehouse data into consistent business models. Their work makes data understandable and trustworthy.
+4. Business users consume those models in reports, dashboards, and analysis instead of repeatedly cleaning raw tables.
+5. The boundaries can overlap between companies, but the central analytics-engineering responsibility remains: transform, test, document, and organize business logic.
+
+Classroom check: ask students to classify **loading a Salesforce table**, **defining revenue**, and **building a dashboard** as data engineering, analytics engineering, or business intelligence.
+
 # Chapter Overview
 
 Modern organizations generate data from dozens of systems every day. However, data by itself has very little value unless it can be transformed into meaningful business insights.

@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: employee_department_summary
+    description: Department-level employee counts and average salaries.
+    columns:
+      - name: department_id
+        description: Unique identifier for a department.
+        data_tests:
+          - not_null
+          - unique
+      - name: employee_count
+        description: Number of employees assigned to the department.
+        data_tests:
+          - not_null

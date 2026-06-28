@@ -2,6 +2,22 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
+## Visual Guide
+
+![Folder tree for the employee analytics dbt project](docs/images/dbt-project-structure.png)
+
+### How to Explain the Diagram
+
+1. `dbt_project.yml` identifies the project and configures paths and materializations.
+2. `profiles.yml` supplies connection details; credentials should not be committed to Git.
+3. `seeds/` contains small CSV datasets used for reference data or classroom input.
+4. `models/staging/` cleans and standardizes source-shaped data with minimal business aggregation.
+5. `models/marts/` contains business-facing results designed for reporting and analysis.
+6. `.sql` files define transformations, while `.yml` files add descriptions, tests, and other properties.
+7. Generated folders such as `target/` and `logs/` are useful for debugging but should normally be ignored by Git.
+
+Ask students to predict where they would place a currency mapping CSV, a cleaned customer model, and a monthly revenue table.
+
 ## Tinitiate AI Solutions
 
 ### dbt Analytics Engineering Bootcamp

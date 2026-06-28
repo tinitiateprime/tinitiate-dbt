@@ -2,6 +2,22 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
+## Visual Guide
+
+![Before and after comparison of analytics work without and with dbt](docs/images/problems-dbt-solves.png)
+
+### How to Explain the Diagram
+
+1. Scattered SQL becomes version-controlled model files with names, owners, and review history.
+2. Assumptions about data quality become executable tests such as `not_null`, `unique`, and `relationships`.
+3. Unknown query order becomes visible lineage created by `ref()` and `source()` dependencies.
+4. Repeated business rules can be centralized in staging models, intermediate models, marts, or macros.
+5. Tribal knowledge becomes generated documentation backed by YAML descriptions and warehouse metadata.
+
+Important nuance: dbt provides the framework, but the team must still write correct business logic, meaningful tests, and useful documentation.
+
+Ask students to identify which problem would create the greatest business risk in their own organization.
+
 ## Tinitiate AI Solutions
 
 ### dbt Analytics Engineering Bootcamp

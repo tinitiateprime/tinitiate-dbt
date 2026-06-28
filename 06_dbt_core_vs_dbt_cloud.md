@@ -2,6 +2,20 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
+## Visual Guide
+
+![Side-by-side feature comparison of dbt Core and dbt Cloud](docs/images/dbt-core-vs-cloud.png)
+
+### How to Explain the Diagram
+
+1. Start with what is shared: models, SQL, Jinja, testing, documentation, and lineage concepts.
+2. dbt Core is installed locally or on team-managed infrastructure and is usually operated through the command line.
+3. Core can be scheduled with tools such as Airflow, GitHub Actions, or another orchestrator, but the team owns that integration.
+4. dbt Cloud provides managed development and deployment capabilities, including scheduling, monitoring, and collaboration.
+5. The correct choice depends less on transformation syntax and more on the organization's operating model.
+
+Scenario discussion: compare a two-person startup that already uses GitHub Actions with a regulated enterprise supporting many analytics teams.
+
 ## Tinitiate AI Solutions
 
 ### dbt Analytics Engineering Bootcamp

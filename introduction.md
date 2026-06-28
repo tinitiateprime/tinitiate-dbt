@@ -2,6 +2,7 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
+
 ## Tinitiate AI Solutions
 
 ### dbt Analytics Engineering 
@@ -9,6 +10,18 @@
 ---
 
 # Chapter Overview
+
+## Visual Guide
+
+![Comparison of dbt Core and dbt Cloud](docs/images/dbt-core-vs-cloud.png)
+
+1. Core and Cloud use the same dbt concepts—SQL models, Jinja, tests, and documentation.
+2. On the Core side, the team installs the command-line tool and owns scheduling, infrastructure, logs, and upgrades.
+3. On the Cloud side, dbt Labs provides a managed environment, browser development, scheduling, monitoring, and collaboration features.
+4. Cloud is not a different transformation language. A well-designed model can use the same SQL and `ref()` logic in either environment.
+5. Operational effort, governance, collaboration, control, and cost.
+
+Ready to begin? Use the **[official download and installation links](07_installing_dbt.md#downloads-and-installation-links)**.
 
 One of the first decisions organizations make when adopting dbt is choosing between:
 
@@ -670,104 +683,10 @@ Many large organizations successfully use dbt Core.
 
 Choosing Cloud before understanding Core concepts.
 
-Students should master Core first.
+We should master Core first.
 
 ---
 
-# Knowledge Check
 
-1. What is dbt Core?
-2. What is dbt Cloud?
-3. Which version is open source?
-4. Which version includes scheduling?
-5. Which version includes a web IDE?
-6. Which version should beginners learn first?
-
----
-
-# Interview Questions
-
-## Beginner
-
-What is dbt Core?
-
-What is dbt Cloud?
-
-What are the major differences?
-
----
-
-## Intermediate
-
-When would you choose dbt Cloud?
-
-How does scheduling work in dbt Core?
-
-What advantages does dbt Cloud provide?
-
----
-
-## Scenario
-
-Your company currently uses dbt Core.
-
-Management wants:
-
-* Scheduling
-* Monitoring
-* Centralized Development
-
-Would you recommend dbt Cloud? Why?
-
----
-
-# Hands-On Exercise
-
-Research:
-
-* dbt Core
-* dbt Cloud
-
-Create a comparison table containing:
-
-* Cost
-* Scheduling
-* Deployment
-* Collaboration
-* Monitoring
-
-Present findings to the class.
-
----
-
-# Assignment
-
-Design a dbt implementation strategy for:
-
-1. Startup
-2. Mid-Sized Company
-3. Enterprise Organization
-
-For each scenario:
-
-* Recommend Core or Cloud
-* Explain your reasoning
-* Identify potential challenges
-
----
-
-# Chapter Summary
-
-In this chapter we learned:
-
-* dbt Core is the open-source version of dbt.
-* dbt Cloud is the managed SaaS offering from dbt Labs.
-* Core provides flexibility and cost advantages.
-* Cloud provides scheduling, collaboration, and governance.
-* Both use the same transformation engine.
-* Students should learn dbt Core first.
-* Organizations choose between Core and Cloud based on requirements, scale, and operational maturity.
-
----
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)

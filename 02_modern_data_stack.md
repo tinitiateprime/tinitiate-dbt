@@ -2,6 +2,21 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
+## Visual Guide
+
+![Five layers of a modern data stack](docs/images/modern-data-stack.png)
+
+### How to Explain the Diagram
+
+1. Source systems are where business events originate; they are not designed for enterprise analytics.
+2. Ingestion tools copy raw data into a central warehouse without defining every business rule first.
+3. Snowflake separates storage from compute and provides the SQL environment used in this course.
+4. dbt operates in the transformation layer. It reads warehouse data and builds cleaned, tested, documented models.
+5. BI tools consume those trusted models. They should not contain many conflicting copies of core business logic.
+6. Quality, security, ownership, and governance are cross-cutting concerns rather than one isolated tool.
+
+Have students trace one example—such as an online order—from the source application to a dashboard metric.
+
 ## Tinitiate AI Solutions
 
 ### dbt Analytics Engineering Bootcamp

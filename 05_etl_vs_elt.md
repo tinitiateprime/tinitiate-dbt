@@ -2,6 +2,20 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
+## Visual Guide
+
+![Comparison of ETL and ELT processing order](docs/images/etl-vs-elt.png)
+
+### How to Explain the Diagram
+
+1. In ETL, transformation happens before data reaches the analytical warehouse. The pipeline must know many transformation rules early.
+2. In ELT, raw data is loaded first and transformed using the warehouse's compute power.
+3. Modern cloud warehouses made ELT practical because storage is inexpensive and compute can scale independently.
+4. dbt performs the final **T** in ELT: it transforms data that is already present in the warehouse.
+5. dbt does not normally extract from source applications or load raw operational data; ingestion tools handle those stages.
+
+Use one customer record to narrate the order in both lanes, then ask students where a cleansing rule runs in each approach.
+
 ## Tinitiate AI Solutions
 
 ### dbt Analytics Engineering Bootcamp

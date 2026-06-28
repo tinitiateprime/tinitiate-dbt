@@ -2,6 +2,41 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
+## Visual Guide
+
+![Five steps for installing dbt Core and the Snowflake adapter](docs/images/install-dbt-steps.png)
+
+### How to Explain the Diagram
+
+1. Python provides the runtime used by the dbt Core v1 command-line workflow taught in this course.
+2. A virtual environment isolates dbt and its Python packages from other projects on the computer.
+3. Activation makes `python`, `pip`, and `dbt` point to that isolated environment.
+4. Installing `dbt-snowflake` installs both the Snowflake adapter and a compatible dbt Core version.
+5. `dbt --version` is the first checkpoint; it should display Core and the Snowflake plugin before connection work begins.
+
+Do not treat installation as complete merely because `pip` finished. Verify the active terminal, dbt version, adapter, and then the Snowflake connection with `dbt debug`.
+
+Continue with the [line-by-line installation practical](00_hands_on_dbt_practical.md#2-download-and-install-dbt-core).
+
+## Downloads and Installation Links
+
+| Tool | Official link | Why students need it |
+| --- | --- | --- |
+| dbt | [Official dbt installation guide](https://docs.getdbt.com/docs/local/install-dbt) | Lists supported installation methods |
+| Python | [Download Python](https://www.python.org/downloads/) | Runs the dbt Core command-line workflow |
+| Git | [Download Git](https://git-scm.com/downloads/) | Downloads and version-controls course projects |
+| VS Code | [Download VS Code](https://code.visualstudio.com/download) | Edits SQL, YAML, CSV, and Markdown files |
+
+For this Snowflake course, run:
+
+```powershell
+python -m pip install --upgrade pip
+python -m pip install dbt-snowflake
+dbt --version
+```
+
+There is no separate dbt Core desktop installer required for this course. Installing `dbt-snowflake` downloads both the Snowflake adapter and a compatible `dbt-core` package.
+
 ## Tinitiate AI Solutions
 
 ### dbt Analytics Engineering Bootcamp

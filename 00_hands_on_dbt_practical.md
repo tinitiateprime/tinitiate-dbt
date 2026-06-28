@@ -2,9 +2,9 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
-This practical builds a small employee analytics project with dbt Core and Snowflake. It assumes no previous dbt knowledge. Students should type each command and each line of code, run it, and inspect the result before moving forward.
+This practical builds a small employee analytics project with dbt Core and Snowflake. It assumes no previous dbt knowledge. Complete each command and code example in order, then inspect the result before moving forward.
 
-## Teaching Method
+## Learning Approach
 
 Use the same rhythm for every step:
 
@@ -95,7 +95,7 @@ When installing Python on Windows, select **Add python.exe to PATH** before choo
 Students can use either method:
 
 - In GitHub, select **Code → Download ZIP**, extract the ZIP, and open the folder in VS Code.
-- If the instructor provides a Git URL, run `git clone <course-repository-url>`.
+- If a course Git URL is available, run `git clone <course-repository-url>`.
 
 ### Windows Installation
 
@@ -157,9 +157,9 @@ Common problems:
 | `dbt` is not recognized | Activate `.venv`, then rerun `dbt --version` |
 | Snowflake adapter is missing | Run `python -m pip install --upgrade dbt-snowflake` |
 
-## 3. Prepare Snowflake — Instructor Setup
+## 3. Prepare Snowflake — Administrator Setup
 
-The following is a one-time classroom setup. The instructor or Snowflake administrator should run it—not every student.
+The following is a one-time environment setup performed by a Snowflake administrator.
 
 ```sql
 use role accountadmin;
@@ -191,7 +191,7 @@ Line by line:
 - The `grant` statements allow the role to use the warehouse and create schemas.
 - Replace `<STUDENT_USERNAME>` and run the final grant once for each student.
 
-Students need these five values from the instructor:
+Before starting, obtain these five values from the Snowflake administrator:
 
 - Snowflake account identifier
 - Username
@@ -212,7 +212,7 @@ cd practical/employee_analytics
 
 ![Folder structure of the employee analytics dbt project](docs/images/dbt-project-structure.png)
 
-Ask students to locate every file shown in the image before running dbt.
+Before running dbt, verify that every file shown in the image is present in the project.
 
 ## 5. Understand `dbt_project.yml`
 
@@ -513,7 +513,7 @@ dbt docs serve --profiles-dir .
 - Open the lineage graph and trace the path from seeds to staging models to the mart.
 - Press `Ctrl+C` in the terminal when the class is finished.
 
-## 14. Commands Students Should Remember
+## 14. Command Reference
 
 | Command | Purpose |
 | --- | --- |

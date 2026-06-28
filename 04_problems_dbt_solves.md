@@ -6,7 +6,7 @@
 
 ![Before and after comparison of analytics work without and with dbt](docs/images/problems-dbt-solves.png)
 
-### How to Explain the Diagram
+### Diagram Explanation
 
 1. Scattered SQL becomes version-controlled model files with names, owners, and review history.
 2. Assumptions about data quality become executable tests such as `not_null`, `unique`, and `relationships`.
@@ -14,9 +14,9 @@
 4. Repeated business rules can be centralized in staging models, intermediate models, marts, or macros.
 5. Tribal knowledge becomes generated documentation backed by YAML descriptions and warehouse metadata.
 
-Important nuance: dbt provides the framework, but the team must still write correct business logic, meaningful tests, and useful documentation.
+dbt provides the framework, but the team must still write correct business logic, meaningful tests, and useful documentation.
 
-Ask students to identify which problem would create the greatest business risk in their own organization.
+The business impact of each problem depends on the organization's data volume, regulatory environment, and dependence on analytics.
 
 ## Tinitiate AI Solutions
 
@@ -558,25 +558,23 @@ This is why many organizations adopt dbt.
 
 ---
 
-# Instructor Talking Points
+# Review and Applied Learning
 
-## Discussion Question
-
-Ask:
+## Reflection Question
 
 "How many different ways can a company calculate revenue?"
 
-Expected Answer:
+Key consideration:
 
 Many.
 
-Explain why centralized business logic is important.
+Centralized business logic prevents teams from producing conflicting results.
 
 ---
 
-## Whiteboard Exercise
+## Architecture Exercise
 
-Draw:
+Comparison:
 
 Without dbt:
 
@@ -603,11 +601,11 @@ All Reports
 
 ## Industry Example
 
-Discuss organizations where:
+Consider organizations where:
 
 Different departments report different revenue values.
 
-Explain how dbt creates a single source of truth.
+dbt helps create a governed source of truth by centralizing transformation logic.
 
 ---
 

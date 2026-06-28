@@ -42,7 +42,7 @@ However, they differ significantly in:
 
 Understanding these differences is important for both interviews and real-world implementations.
 
-By the end of this chapter, students should know:
+By the end of this chapter, you will understand:
 
 * When to use dbt Core
 * When to use dbt Cloud
@@ -214,7 +214,7 @@ Can integrate with almost any CI/CD platform.
 
 ## Excellent for Learning
 
-Students should start with dbt Core.
+Beginners should start with dbt Core.
 
 Why?
 
@@ -588,17 +588,13 @@ Later we will discuss how enterprises deploy the same project using dbt Cloud.
 
 ---
 
-# Instructor Talking Points
+# Review and Applied Learning
 
-## Discussion Question
-
-Ask:
+## Reflection Question
 
 Why would a company pay for dbt Cloud when dbt Core is free?
 
-Allow discussion.
-
-Expected answers:
+Key considerations:
 
 * Scheduling
 * Monitoring
@@ -607,9 +603,9 @@ Expected answers:
 
 ---
 
-## Whiteboard Exercise
+## Architecture Exercise
 
-Draw:
+Comparison:
 
 ### Core
 
@@ -631,19 +627,19 @@ dbt Cloud
 Snowflake
 ```
 
-Discuss operational differences.
+The comparison highlights differences in operational ownership.
 
 ---
 
 ## Industry Example
 
-Discuss a team of:
+Consider an organization with:
 
 * 20 Analytics Engineers
 * 50 Analysts
 * 500 Models
 
-Explain why governance becomes important.
+At this scale, governance becomes essential for consistency, ownership, access control, and reliable deployment.
 
 ---
 

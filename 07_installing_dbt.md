@@ -6,7 +6,7 @@
 
 ![Five steps for installing dbt Core and the Snowflake adapter](docs/images/install-dbt-steps.png)
 
-### How to Explain the Diagram
+### Diagram Explanation
 
 1. Python provides the runtime used by the dbt Core v1 command-line workflow taught in this course.
 2. A virtual environment isolates dbt and its Python packages from other projects on the computer.
@@ -14,7 +14,7 @@
 4. Installing `dbt-snowflake` installs both the Snowflake adapter and a compatible dbt Core version.
 5. `dbt --version` is the first checkpoint; it should display Core and the Snowflake plugin before connection work begins.
 
-Do not treat installation as complete merely because `pip` finished. Verify the active terminal, dbt version, adapter, and then the Snowflake connection with `dbt debug`.
+Installation is complete only after verifying the active terminal, dbt version, adapter, and Snowflake connection with `dbt debug`.
 
 Continue with the [line-by-line installation practical](00_hands_on_dbt_practical.md#2-download-and-install-dbt-core).
 
@@ -741,15 +741,13 @@ Verify:
 
 ---
 
-# Instructor Talking Points
+# Review and Applied Learning
 
-## Discussion Question
-
-Ask:
+## Reflection Question
 
 Why do developers use virtual environments?
 
-Expected Answers:
+Key considerations:
 
 * Isolation
 * Dependency Management
@@ -757,9 +755,9 @@ Expected Answers:
 
 ---
 
-## Whiteboard Exercise
+## Architecture Exercise
 
-Draw:
+Comparison:
 
 Without Virtual Environment:
 
@@ -789,7 +787,7 @@ Project B
 venv
 ```
 
-Explain isolation.
+Each virtual environment isolates a project's packages and versions.
 
 ---
 
@@ -891,7 +889,7 @@ In this chapter we learned:
 * VS Code and Git are essential tools.
 * Proper environment setup reduces future issues.
 
-Students should now have a fully functional dbt development environment ready for project creation.
+The dbt development environment is now ready for project creation.
 
 ---
 

@@ -6,7 +6,7 @@
 
 ![Folder tree for the employee analytics dbt project](docs/images/dbt-project-structure.png)
 
-### How to Explain the Diagram
+### Diagram Explanation
 
 1. `dbt_project.yml` identifies the project and configures paths and materializations.
 2. `profiles.yml` supplies connection details; credentials should not be committed to Git.
@@ -16,7 +16,7 @@
 6. `.sql` files define transformations, while `.yml` files add descriptions, tests, and other properties.
 7. Generated folders such as `target/` and `logs/` are useful for debugging but should normally be ignored by Git.
 
-Ask students to predict where they would place a currency mapping CSV, a cleaned customer model, and a monthly revenue table.
+A currency mapping CSV belongs in `seeds/`, a cleaned customer model belongs in staging, and a monthly revenue table belongs in a business-facing mart.
 
 ## Tinitiate AI Solutions
 
@@ -370,7 +370,7 @@ Dashboards
 
 This is one of the most important diagrams in dbt.
 
-Students should memorize this architecture.
+This layered architecture is a useful reference for organizing production projects.
 
 ---
 
@@ -724,27 +724,25 @@ This is the structure students will build.
 
 ---
 
-# Instructor Talking Points
+# Review and Applied Learning
 
-## Discussion Question
-
-Ask:
+## Reflection Question
 
 Why not place all SQL files in a single folder?
 
-Expected Answers:
+Key considerations:
 
 * Difficult Maintenance
 * Poor Organization
 * Scalability Issues
 
-Introduce layered architecture.
+Layered architecture addresses these organization and scaling concerns.
 
 ---
 
-## Whiteboard Exercise
+## Architecture Exercise
 
-Draw:
+Reference architecture:
 
 ```text
 Raw
@@ -766,7 +764,7 @@ Mart
 Dashboard
 ```
 
-Explain each layer.
+Each layer has a distinct transformation responsibility.
 
 ---
 

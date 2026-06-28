@@ -6,7 +6,7 @@
 
 ![Flow from source systems through data engineering and analytics engineering to business users](docs/images/analytics-engineering-flow.png)
 
-### How to Explain the Diagram
+### Diagram Explanation
 
 1. Source systems create operational data from sales, finance, HR, websites, and applications.
 2. Data engineers move and store that data reliably in a warehouse. Their work makes data available.
@@ -14,7 +14,7 @@
 4. Business users consume those models in reports, dashboards, and analysis instead of repeatedly cleaning raw tables.
 5. The boundaries can overlap between companies, but the central analytics-engineering responsibility remains: transform, test, document, and organize business logic.
 
-Classroom check: ask students to classify **loading a Salesforce table**, **defining revenue**, and **building a dashboard** as data engineering, analytics engineering, or business intelligence.
+For example, **loading a Salesforce table** is typically data engineering, **defining revenue** is analytics engineering, and **building a dashboard** is business intelligence.
 
 # Chapter Overview
 
@@ -345,27 +345,25 @@ Analytics Engineers create these business-friendly datasets using tools such as 
 
 ---
 
-# Instructor Talking Points
+# Review and Applied Learning
 
-## Discussion Starter
-
-Ask:
+## Reflection Question
 
 Why can't executives directly query raw tables?
 
-Typical responses:
+Key considerations:
 
 * Technical column names
 * Poor data quality
 * Missing business context
 
-Explain that Analytics Engineering exists specifically to bridge this gap.
+Analytics Engineering exists specifically to bridge this gap.
 
 ---
 
-## Whiteboard Diagram
+## Architecture Exercise
 
-Draw:
+Reference flow:
 
 Source Systems
 
@@ -385,7 +383,7 @@ Analytics Engineering
 
 Power BI
 
-Explain the responsibilities at each layer.
+Each layer has a distinct responsibility in producing trusted analytics data.
 
 ---
 

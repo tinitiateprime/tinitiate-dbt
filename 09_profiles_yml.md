@@ -6,7 +6,7 @@
 
 ![How a dbt project uses profiles.yml to connect to Snowflake](docs/images/profiles-connection.png)
 
-### How to Explain the Diagram
+### Diagram Explanation
 
 1. The `profile:` value in `dbt_project.yml` chooses a matching top-level profile name.
 2. `target: dev` selects one output from that profile. Other outputs might represent QA or production.
@@ -849,23 +849,21 @@ Benefits:
 
 ---
 
-# Instructor Talking Points
+# Review and Applied Learning
 
-## Discussion Question
-
-Ask:
+## Reflection Question
 
 Why should credentials not be stored inside dbt_project.yml?
 
-Expected Answer:
+Key consideration:
 
 Security.
 
 ---
 
-## Whiteboard Exercise
+## Architecture Exercise
 
-Draw:
+Reference flow:
 
 ```text
 dbt Project
@@ -879,7 +877,7 @@ profiles.yml
 Snowflake
 ```
 
-Explain the flow.
+The project selects a profile, and the profile supplies the Snowflake connection.
 
 ---
 
@@ -895,7 +893,7 @@ Enterprise Setup:
 1 Snowflake Account
 ```
 
-Explain why profiles.yml becomes critical.
+At enterprise scale, `profiles.yml` becomes critical for separating users and environments safely.
 
 ---
 

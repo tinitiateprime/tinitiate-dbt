@@ -6,7 +6,7 @@
 
 ![Five layers of a modern data stack](docs/images/modern-data-stack.png)
 
-### How to Explain the Diagram
+### Diagram Explanation
 
 1. Source systems are where business events originate; they are not designed for enterprise analytics.
 2. Ingestion tools copy raw data into a central warehouse without defining every business rule first.
@@ -15,7 +15,7 @@
 5. BI tools consume those trusted models. They should not contain many conflicting copies of core business logic.
 6. Quality, security, ownership, and governance are cross-cutting concerns rather than one isolated tool.
 
-Have students trace one example—such as an online order—from the source application to a dashboard metric.
+For example, an online order moves from the source application through ingestion and warehouse storage before dbt transforms it into a dashboard-ready metric.
 
 ## Tinitiate AI Solutions
 
@@ -556,28 +556,26 @@ This project architecture mirrors what students will build throughout this bootc
 
 ---
 
-# Instructor Talking Points
+# Review and Applied Learning
 
-## Discussion Starter
-
-Ask:
+## Reflection Question
 
 "Why can't organizations run reports directly from Salesforce?"
 
-Expected Answers:
+Key considerations:
 
 * Performance Issues
 * Multiple Systems
 * Data Quality
 * Historical Analysis
 
-Explain why centralization is necessary.
+Centralization provides consistent history, performance, quality controls, and cross-system analysis.
 
 ---
 
-## Whiteboard Diagram
+## Architecture Exercise
 
-Draw:
+Reference architecture:
 
 ```text
 Sources
@@ -591,7 +589,7 @@ dbt
 Reports
 ```
 
-Walk through each layer.
+The flow progresses from operational sources to ingestion, centralized storage, transformation, and reporting.
 
 ---
 

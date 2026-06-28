@@ -6,7 +6,7 @@
 
 ![Side-by-side feature comparison of dbt Core and dbt Cloud](docs/images/dbt-core-vs-cloud.png)
 
-### How to Explain the Diagram
+### Diagram Explanation
 
 1. Start with what is shared: models, SQL, Jinja, testing, documentation, and lineage concepts.
 2. dbt Core is installed locally or on team-managed infrastructure and is usually operated through the command line.
@@ -14,7 +14,7 @@
 4. dbt Cloud provides managed development and deployment capabilities, including scheduling, monitoring, and collaboration.
 5. The correct choice depends less on transformation syntax and more on the organization's operating model.
 
-Scenario discussion: compare a two-person startup that already uses GitHub Actions with a regulated enterprise supporting many analytics teams.
+The operational tradeoff becomes clear when comparing a two-person startup using GitHub Actions with a regulated enterprise supporting many analytics teams.
 
 ## Tinitiate AI Solutions
 
@@ -43,7 +43,7 @@ However, they differ significantly in:
 
 Understanding these differences is important for both interviews and real-world implementations.
 
-By the end of this chapter, students should know:
+By the end of this chapter, you will understand:
 
 * When to use dbt Core
 * When to use dbt Cloud
@@ -215,7 +215,7 @@ Can integrate with almost any CI/CD platform.
 
 ## Excellent for Learning
 
-Students should start with dbt Core.
+Beginners should start with dbt Core.
 
 Why?
 
@@ -589,17 +589,13 @@ Later we will discuss how enterprises deploy the same project using dbt Cloud.
 
 ---
 
-# Instructor Talking Points
+# Review and Applied Learning
 
-## Discussion Question
-
-Ask:
+## Reflection Question
 
 Why would a company pay for dbt Cloud when dbt Core is free?
 
-Allow discussion.
-
-Expected answers:
+Key considerations:
 
 * Scheduling
 * Monitoring
@@ -608,9 +604,9 @@ Expected answers:
 
 ---
 
-## Whiteboard Exercise
+## Architecture Exercise
 
-Draw:
+Comparison:
 
 ### Core
 
@@ -632,19 +628,19 @@ dbt Cloud
 Snowflake
 ```
 
-Discuss operational differences.
+The comparison highlights differences in operational ownership.
 
 ---
 
 ## Industry Example
 
-Discuss a team of:
+Consider an organization with:
 
 * 20 Analytics Engineers
 * 50 Analysts
 * 500 Models
 
-Explain why governance becomes important.
+At this scale, governance becomes essential for consistency, ownership, access control, and reliable deployment.
 
 ---
 
@@ -684,7 +680,7 @@ Many large organizations successfully use dbt Core.
 
 Choosing Cloud before understanding Core concepts.
 
-Students should master Core first.
+Master dbt Core fundamentals first.
 
 ---
 
@@ -779,7 +775,7 @@ In this chapter we learned:
 * Core provides flexibility and cost advantages.
 * Cloud provides scheduling, collaboration, and governance.
 * Both use the same transformation engine.
-* Students should learn dbt Core first.
+* Learning dbt Core first provides a strong foundation.
 * Organizations choose between Core and Cloud based on requirements, scale, and operational maturity.
 
 ---

@@ -6,7 +6,7 @@
 
 ![Comparison of ETL and ELT processing order](docs/images/etl-vs-elt.png)
 
-### How to Explain the Diagram
+### Diagram Explanation
 
 1. In ETL, transformation happens before data reaches the analytical warehouse. The pipeline must know many transformation rules early.
 2. In ELT, raw data is loaded first and transformed using the warehouse's compute power.
@@ -14,7 +14,7 @@
 4. dbt performs the final **T** in ELT: it transforms data that is already present in the warehouse.
 5. dbt does not normally extract from source applications or load raw operational data; ingestion tools handle those stages.
 
-Use one customer record to narrate the order in both lanes, then ask students where a cleansing rule runs in each approach.
+A single customer record follows a different sequence in each approach: ETL cleans it before warehouse loading, while ELT cleans it inside the warehouse.
 
 ## Tinitiate AI Solutions
 
@@ -546,7 +546,7 @@ Question:
 
 Why did organizations move from ETL to ELT?
 
-Expected Answer:
+Answer:
 
 Cloud data warehouses became powerful enough to perform transformations internally, reducing infrastructure complexity and improving scalability.
 
@@ -595,23 +595,17 @@ Benefits:
 
 ---
 
-# Instructor Talking Points
+# Review and Applied Learning
 
-## Discussion Question
-
-Ask students:
+## Reflection Question
 
 Why maintain a separate ETL server if Snowflake already provides powerful compute resources?
 
-Allow discussion.
-
-Then introduce ELT.
-
 ---
 
-## Whiteboard Exercise
+## Architecture Exercise
 
-Draw both architectures.
+Compare both architectures.
 
 ### ETL
 
@@ -633,7 +627,7 @@ Warehouse
 Transform
 ```
 
-Ask students to identify the difference.
+The key difference is the location and timing of transformation.
 
 ---
 

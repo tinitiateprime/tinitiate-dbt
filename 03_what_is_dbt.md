@@ -6,7 +6,7 @@
 
 ![Four steps showing how dbt runs a SQL model](docs/images/how-dbt-runs-model.png)
 
-### How to Explain the Diagram
+### Diagram Explanation
 
 1. A dbt model begins as a saved `SELECT` statement. Students do not normally write the final `CREATE VIEW` or `CREATE TABLE` statement themselves.
 2. `ref()` names another dbt resource. It also tells dbt that the current model depends on that resource.
@@ -14,7 +14,7 @@
 4. During execution, the warehouse—not the student's laptop—performs the SQL transformation.
 5. Tests, documentation, and lineage are connected to the same model, turning a SQL query into a managed analytics asset.
 
-Demonstrate this with `dbt compile`, then compare the model file with its generated SQL under `target/compiled`.
+The compilation process can be inspected with `dbt compile` by comparing the model file with its generated SQL under `target/compiled`.
 
 ## Tinitiate AI Solutions
 
@@ -849,11 +849,9 @@ This project mirrors real enterprise implementations.
 
 ---
 
-# Instructor Talking Points
+# Review and Applied Learning
 
-## Discussion Question
-
-Ask:
+## Reflection Question
 
 Can Power BI directly connect to raw SAP tables?
 
@@ -875,9 +873,9 @@ This naturally introduces the transformation layer.
 
 ---
 
-## Whiteboard Exercise
+## Architecture Exercise
 
-Draw:
+Reference architecture:
 
 ```text
 SAP
@@ -897,7 +895,7 @@ dbt
 Power BI
 ```
 
-Walk through each component.
+Each component has a distinct role between operational data and business reporting.
 
 ---
 

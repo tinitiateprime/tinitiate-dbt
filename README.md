@@ -21,8 +21,6 @@ dbt --version
 ## Course Contents
 
 - **[Introduction: dbt Core vs dbt Cloud](introduction.md)** — An overview of dbt's open-source and managed options.
-- **[Hands-On: Build Your First dbt Project](00_hands_on_dbt_practical.md)** — Download and install dbt, then follow a visual Snowflake project line by line through models, tests, documentation, and lineage.
-
 1. **[Analytics Engineering](01_analytics_engineering.md)** — Learn the role, responsibilities, and value of analytics engineers.
 2. **[Modern Data Stack](02_modern_data_stack.md)** — Understand the tools and layers used in modern data platforms.
 3. **[What is dbt?](03_what_is_dbt.md)** — Discover what dbt does and where it fits in the data workflow.
@@ -32,3 +30,4 @@ dbt --version
 7. **[Installing dbt](07_installing_dbt.md)** — Set up Python, dbt Core, the Snowflake adapter, VS Code, and Git.
 8. **[dbt Project Structure](08_dbt_project_structure.md)** — Learn the purpose of models, macros, seeds, snapshots, tests, and project files.
 9. **[profiles.yml](09_profiles_yml.md)** — Configure database connections, environments, targets, and credentials.
+- **[Hands-On: Build Your First dbt Project](00_hands_on_dbt_practical.md)** — Download and install dbt, then follow a visual Snowflake project line by line through models, tests, documentation, and lineage.

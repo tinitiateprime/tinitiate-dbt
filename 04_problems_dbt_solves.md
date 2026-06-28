@@ -2,22 +2,6 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
-## Visual Guide
-
-![Before and after comparison of analytics work without and with dbt](docs/images/problems-dbt-solves.png)
-
-### Diagram Explanation
-
-1. Scattered SQL becomes version-controlled model files with names, owners, and review history.
-2. Assumptions about data quality become executable tests such as `not_null`, `unique`, and `relationships`.
-3. Unknown query order becomes visible lineage created by `ref()` and `source()` dependencies.
-4. Repeated business rules can be centralized in staging models, intermediate models, marts, or macros.
-5. Tribal knowledge becomes generated documentation backed by YAML descriptions and warehouse metadata.
-
-dbt provides the framework, but the team must still write correct business logic, meaningful tests, and useful documentation.
-
-The business impact of each problem depends on the organization's data volume, regulatory environment, and dependence on analytics.
-
 ## Tinitiate AI Solutions
 
 ### dbt Analytics Engineering Bootcamp
@@ -40,6 +24,22 @@ Many organizations successfully load data into a warehouse such as Snowflake but
 These challenges become more severe as organizations grow.
 
 dbt was created to address these problems using software engineering principles.
+
+## Visual Guide
+
+![Before and after comparison of analytics work without and with dbt](docs/images/problems-dbt-solves.png)
+
+### Diagram Explanation
+
+1. Scattered SQL becomes version-controlled model files with names, owners, and review history.
+2. Assumptions about data quality become executable tests such as `not_null`, `unique`, and `relationships`.
+3. Unknown query order becomes visible lineage created by `ref()` and `source()` dependencies.
+4. Repeated business rules can be centralized in staging models, intermediate models, marts, or macros.
+5. Tribal knowledge becomes generated documentation backed by YAML descriptions and warehouse metadata.
+
+dbt provides the framework, but the team must still write correct business logic, meaningful tests, and useful documentation.
+
+The business impact of each problem depends on the organization's data volume, regulatory environment, and dependence on analytics.
 
 ---
 

@@ -2,6 +2,12 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
+# Chapter Overview
+
+Modern organizations generate data from dozens of systems every day. However, data by itself has very little value unless it can be transformed into meaningful business insights.
+
+This chapter introduces Analytics Engineering, one of the fastest-growing disciplines in the data industry. Understanding Analytics Engineering is critical before learning dbt because dbt was specifically designed to solve Analytics Engineering problems.
+
 ## Visual Guide
 
 ![Flow from source systems through data engineering and analytics engineering to business users](docs/images/analytics-engineering-flow.png)
@@ -15,12 +21,6 @@
 5. The boundaries can overlap between companies, but the central analytics-engineering responsibility remains: transform, test, document, and organize business logic.
 
 For example, **loading a Salesforce table** is typically data engineering, **defining revenue** is analytics engineering, and **building a dashboard** is business intelligence.
-
-# Chapter Overview
-
-Modern organizations generate data from dozens of systems every day. However, data by itself has very little value unless it can be transformed into meaningful business insights.
-
-This chapter introduces Analytics Engineering, one of the fastest-growing disciplines in the data industry. Understanding Analytics Engineering is critical before learning dbt because dbt was specifically designed to solve Analytics Engineering problems.
 
 ---
 

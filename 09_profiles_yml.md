@@ -2,23 +2,6 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
-## Visual Guide
-
-![How a dbt project uses profiles.yml to connect to Snowflake](docs/images/profiles-connection.png)
-
-### Diagram Explanation
-
-1. The `profile:` value in `dbt_project.yml` chooses a matching top-level profile name.
-2. `target: dev` selects one output from that profile. Other outputs might represent QA or production.
-3. The selected output provides the adapter type and Snowflake account, user, role, warehouse, database, and schema.
-4. dbt uses those values to compile environment-specific object names and open a Snowflake connection.
-5. Passwords and other secrets should come from environment variables or an approved authentication method—not hard-coded Git files.
-6. A separate development schema prevents students or developers from overwriting one another's objects.
-
-Run `dbt debug` after every meaningful profile change. Read each check instead of jumping directly to the final error message.
-
-Continue with the [hands-on connection setup](00_hands_on_dbt_practical.md#6-configure-the-snowflake-connection).
-
 ## Tinitiate AI Solutions
 
 ### dbt Analytics Engineering Bootcamp
@@ -62,6 +45,23 @@ This file tells dbt:
 * Which environment to connect to
 
 Understanding this file is essential because every dbt project depends on it.
+
+## Visual Guide
+
+![How a dbt project uses profiles.yml to connect to Snowflake](docs/images/profiles-connection.png)
+
+### Diagram Explanation
+
+1. The `profile:` value in `dbt_project.yml` chooses a matching top-level profile name.
+2. `target: dev` selects one output from that profile. Other outputs might represent QA or production.
+3. The selected output provides the adapter type and Snowflake account, user, role, warehouse, database, and schema.
+4. dbt uses those values to compile environment-specific object names and open a Snowflake connection.
+5. Passwords and other secrets should come from environment variables or an approved authentication method—not hard-coded Git files.
+6. A separate development schema prevents students or developers from overwriting one another's objects.
+
+Run `dbt debug` after every meaningful profile change. Read each check instead of jumping directly to the final error message.
+
+Continue with the [hands-on connection setup](00_hands_on_dbt_practical.md#6-configure-the-snowflake-connection).
 
 ---
 

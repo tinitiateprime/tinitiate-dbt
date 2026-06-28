@@ -2,6 +2,35 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
+## Tinitiate AI Solutions
+
+### dbt Analytics Engineering Bootcamp
+
+---
+
+# Chapter Overview
+
+Before we can build models, tests, documentation, and analytics solutions using dbt, we must first install and configure our local development environment.
+
+Many beginners struggle during installation because they are unfamiliar with:
+
+* Python
+* Package Managers
+* Virtual Environments
+* Terminal Commands
+* Environment Variables
+
+This chapter walks through the installation process step-by-step and explains not only what to do, but why each step is important.
+
+By the end of this chapter students will have:
+
+* Python Installed
+* Virtual Environment Configured
+* dbt Core Installed
+* Snowflake Adapter Installed
+* VS Code Configured
+* dbt Verified and Ready for Development
+
 ## Visual Guide
 
 ![Five steps for installing dbt Core and the Snowflake adapter](docs/images/install-dbt-steps.png)
@@ -36,35 +65,6 @@ dbt --version
 ```
 
 There is no separate dbt Core desktop installer required for this course. Installing `dbt-snowflake` downloads both the Snowflake adapter and a compatible `dbt-core` package.
-
-## Tinitiate AI Solutions
-
-### dbt Analytics Engineering Bootcamp
-
----
-
-# Chapter Overview
-
-Before we can build models, tests, documentation, and analytics solutions using dbt, we must first install and configure our local development environment.
-
-Many beginners struggle during installation because they are unfamiliar with:
-
-* Python
-* Package Managers
-* Virtual Environments
-* Terminal Commands
-* Environment Variables
-
-This chapter walks through the installation process step-by-step and explains not only what to do, but why each step is important.
-
-By the end of this chapter students will have:
-
-* Python Installed
-* Virtual Environment Configured
-* dbt Core Installed
-* Snowflake Adapter Installed
-* VS Code Configured
-* dbt Verified and Ready for Development
 
 ---
 

@@ -2,7 +2,6 @@
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
 
-
 ## Tinitiate AI Solutions
 
 ### dbt Analytics Engineering 
@@ -10,18 +9,6 @@
 ---
 
 # Chapter Overview
-
-## Visual Guide
-
-![Comparison of dbt Core and dbt Cloud](docs/images/dbt-core-vs-cloud.png)
-
-1. Core and Cloud use the same dbt concepts—SQL models, Jinja, tests, and documentation.
-2. On the Core side, the team installs the command-line tool and owns scheduling, infrastructure, logs, and upgrades.
-3. On the Cloud side, dbt Labs provides a managed environment, browser development, scheduling, monitoring, and collaboration features.
-4. Cloud is not a different transformation language. A well-designed model can use the same SQL and `ref()` logic in either environment.
-5. Operational effort, governance, collaboration, control, and cost.
-
-Ready to begin? Use the **[official download and installation links](07_installing_dbt.md#downloads-and-installation-links)**.
 
 One of the first decisions organizations make when adopting dbt is choosing between:
 
@@ -49,6 +36,18 @@ By the end of this chapter, you will understand:
 * Advantages and limitations of each
 * Enterprise adoption patterns
 * Interview-ready explanations
+
+## Visual Guide
+
+![Comparison of dbt Core and dbt Cloud](docs/images/dbt-core-vs-cloud.png)
+
+1. Core and Cloud use the same dbt concepts—SQL models, Jinja, tests, and documentation.
+2. On the Core side, the team installs the command-line tool and owns scheduling, infrastructure, logs, and upgrades.
+3. On the Cloud side, dbt Labs provides a managed environment, browser development, scheduling, monitoring, and collaboration features.
+4. Cloud is not a different transformation language. A well-designed model can use the same SQL and `ref()` logic in either environment.
+5. Operational effort, governance, collaboration, control, and cost.
+
+Ready to begin? Use the **[official download and installation links](07_installing_dbt.md#downloads-and-installation-links)**.
 
 ---
 
@@ -682,7 +681,5 @@ Choosing Cloud before understanding Core concepts.
 We should master Core first.
 
 ---
-
-
 
 [← Back to Contents](README.md#course-contents) · [⌂ Back to Home Page](README.md)
